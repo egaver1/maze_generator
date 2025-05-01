@@ -3,6 +3,14 @@ Generates a maze with the given minimum path and node count and draws a picture 
 
 ## Usage
 run ``./maze.exe <maze.json or 'r'> <min # lines needed to travel to reach END><max # of nodes>``
+**Ex**
+``./maze.exe r 2 15``
+Generates a maze using 15 possible nodes where it takes at least 2 lines to escape.
+
+``./maze.exe maze.json 0 0``
+the other 2 args don't matter when you load a file so I set them to 0. This will load the maze and draw it. 
+
+*If you understand how to write json you could write a testing switch-board layout in the specified format to have this draw it...*
 
 - maze.json or any other filename is the name of a maze file to be loaded and drawn alternatively you can enter r for a random maze (use the included maze.json as an example)!
 - I think the other arguments are self-explanatory
